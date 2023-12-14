@@ -1,0 +1,31 @@
+<!-- app.component.html -->
+<style>.navbar {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: #45a049;
+}</style>
+<div class="navbar">
+  <button routerLink="/all-clients">Tous les Clients</button>
+  <button routerLink="/most-purchased-products">Produits les Plus Achetés</button>
+  <button routerLink="/loyal-clients">Clients Fidèles</button>
+  <button routerLink="/facture-detailles">Détails de Facture</button>
+  <button routerLink="/client-unpaid">Client a des facture impayé</button>
+
+</div>
+
+<router-outlet></router-outlet>
+

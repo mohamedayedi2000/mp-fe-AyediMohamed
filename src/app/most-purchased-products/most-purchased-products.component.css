@@ -1,0 +1,43 @@
+/* most-purchased-products.component.css */
+.most-purchased-products-container {
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .most-purchased-products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .product-row {
+    background-color: #f8f8f8;
+  }
+  
+  .product-row:nth-child(even) {
+    background-color: #eaeaea;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #2c3e50;
+  }
+  

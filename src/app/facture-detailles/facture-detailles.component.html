@@ -1,0 +1,40 @@
+<!-- facture-detailles.component.html -->
+<div class="facture-details-container">
+    <h2>Facture Details</h2>
+
+    <label for="clientSelect">Select Client:</label>
+    <select id="clientSelect" [(ngModel)]="clientId">
+        <option *ngFor="let client of clients" [value]="client.id">{{ client.id }} - {{ client.name }}</option>
+    </select>
+
+    <button class="btn" (click)="getInvoiceDetails()">Obtenir les détails de la facture</button>
+
+    <div *ngIf="invoiceDetails && invoiceDetails.length > 0">
+        <table class="facture-details-table">
+            <thead>
+                <tr>
+                    <th>Reglement ID</th>
+                    <th>Reglement Number</th>
+                    <th>Montant Total</th>
+                    <th>Montant payé</th>
+                    <th>Montant restant</th>
+                    <!-- Add other fields as needed -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let detail of invoiceDetails" class="facture-row">
+                    <td>{{ detail[0] }}</td>
+                    <td>{{ detail[1] }}</td>
+                    <td>{{ detail[2] }}</td>
+                    <td>{{ detail[3] }}</td>
+                    <td>{{ detail[4] }}</td>
+                    <!-- Add other fields as needed -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="no-data-message" *ngIf="!invoiceDetails || invoiceDetails.length === 0">
+        No invoice details available.
+    </div>
+</div>

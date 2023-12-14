@@ -1,0 +1,26 @@
+<!-- most-purchased-products.component.html -->
+<div class="most-purchased-products-container">
+    <h2>Produits les plus achetés</h2>
+    <table class="most-purchased-products-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Designation</th>
+          <th>Quantity</th>
+          <!-- Add other fields as needed -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of mostPurchasedProducts" class="product-row">
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.designation }}</td>
+          <td>{{ product.totalQuantity }}</td>
+
+          <!-- Add other fields as needed -->
+        </tr>
+      </tbody>
+    </table>
+    <a routerLink="/most-purchased-products"></a>
+</div>

@@ -1,0 +1,31 @@
+<!-- loyal-clients.component.html -->
+<div class="loyal-clients-container">
+    <h2>Clients fidèles</h2>
+    <table class="loyal-clients-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Code</th>
+          <th>Name</th>
+          <th>Telephone</th>
+          <th>Email</th>
+          <th>Address</th>
+          <!-- Add other fields as needed -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let client of loyalClients" class="loyal-client-row">
+          <td>{{ client.id }}</td>
+          <td>{{ client.code }}</td>
+          <td>{{ client.name }} {{ client.pname }}</td>
+          <td>{{ client.tel }}</td>
+          <td>{{ client.email }}</td>
+          <td>{{ client.address }}</td>
+
+          <!-- Add other fields as needed -->
+        </tr>
+      </tbody>
+    </table>
+    <a routerLink="/loyal-clients"></a>
+  </div>
+  

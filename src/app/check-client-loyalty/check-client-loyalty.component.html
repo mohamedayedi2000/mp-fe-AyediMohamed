@@ -1,0 +1,27 @@
+<div>
+    <h2>All Clients</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Code</th>
+          <th>Name</th>
+          <th>Address</th>
+          <!-- Add other fields as needed -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let client of clients">
+          <td>{{ client.id }}</td>
+          <td>{{ client.code }}</td>
+          <td>{{ client.name }}</td>
+          <td>{{ client.address }}</td>
+          <!-- Add other fields as needed -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+      <a routerLink="/loyal-clients">Explore our Loyal Clients</a>
+  
+  

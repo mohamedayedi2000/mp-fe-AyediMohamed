@@ -1,0 +1,41 @@
+/* Styles for the container */
+div {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles for the heading */
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Styles for the list */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Styles for list items */
+  li {
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for client details */
+  strong {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  /* Styles for horizontal line */
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  

@@ -1,0 +1,38 @@
+<!-- all-clients.component.html -->
+<div>
+    <h2>Tous les clients</h2>
+  
+  
+    <table class="clients-table" *ngIf="loyalClients && loyalClients.length > 0">
+      <thead>
+        <tr>
+          <th>Client ID</th>
+          <th>Name</th>
+          <th>Tel</th>
+          <Th>Email</Th>
+          <th>Adresse</th>
+          <th>Status</th>
+          <!-- Add other fields as needed -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let client of loyalClients" class="client-row">
+          <td>{{ client.id }}</td>
+          <td>{{ client.name }} {{ client.pname }}</td>
+          <td>{{ client.tel }}</td>
+          <td>{{ client.email }}</td>
+          <td>{{ client.address }}</td>
+           <td>{{ client.statuClient ? 'Fidèle' : 'Non Fidèle' }}</td>
+
+          <!-- Add other fields as needed -->
+        </tr>
+      </tbody>
+    </table>
+  
+    <div *ngIf="!loyalClients || loyalClients.length === 0">
+      No clients available.
+    </div>
+  
+   
+  </div>
+  

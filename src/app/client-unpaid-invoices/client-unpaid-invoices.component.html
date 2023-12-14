@@ -1,0 +1,19 @@
+<div>
+    <h2>Clients avec factures impayées</h2>
+  
+    <ul>
+      <!-- Iterate over clients with unpaid invoices and display client information -->
+      <li *ngFor="let client of clientsWithUnpaidInvoices">
+        <strong>ID:</strong> {{ client.id }}<br>
+        <strong>Code:</strong> {{ client.code }}<br>
+        <strong>Name:</strong> {{ client.name }}<br>
+        <strong>Person Name:</strong> {{ client.pname }}<br>
+        <strong>Address:</strong> {{ client.address }}<br>
+        <strong>Status:</strong> {{ client.statuClient ? 'Active' : 'Inactive' }}<br>
+        <strong>Email:</strong> {{ client.email }}<br>
+        <strong>Telephone:</strong> {{ client.tel }}<br>
+        <!-- Add more attributes here as needed -->
+        <hr>
+      </li>
+    </ul>
+  </div>

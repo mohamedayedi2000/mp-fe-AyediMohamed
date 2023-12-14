@@ -1,0 +1,50 @@
+/* facture-detailles.component.css */
+.facture-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-right: 10px;
+}
+
+select, button {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.facture-details-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.facture-details-table th, .facture-details-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.facture-row {
+    background-color: #f9f9f9;
+}
+
+.no-data-message {
+    margin-top: 20px;
+    color: #888;
+}
